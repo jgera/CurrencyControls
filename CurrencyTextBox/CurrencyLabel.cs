@@ -38,6 +38,7 @@ namespace CurrencyTextBox
             var nf = new CultureInfo(_ci.Name, false).NumberFormat;
             _decimalSeparator = nf.CurrencyDecimalSeparator.ToCharArray()[0];
             _allowedCharacterSet = string.Format("0123456789{0}", _decimalSeparator);
+
             InitializeComponent();
         }
     }
